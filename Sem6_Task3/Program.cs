@@ -9,11 +9,11 @@ int CountVowels(string str)
 {
     string vowels = "aeyuio";
     int count = 0;
-    for (int i = 0; i < str.Length; i++)
+    for (int i = 0; i < str.Length; i++) 
     {
         for (int j = 0; j < vowels.Length; j++)
         {
-            if (vowels[j] == str[i])
+            if (str[i] == vowels[j]) // убрать второй фор и оставить if (vowels.Contains(str[i]))
             {
                 count++;
             }
